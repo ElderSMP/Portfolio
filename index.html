@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Paul Marinas - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>JP<span>M</span></h1>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Hi, I'm <span>John Paul</span><br>Marinas</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile-picture.png" alt="profile picture">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a information technology student passionate about web development and programming. 
+                    This portfolio showcases my college projects and skills I've developed through coursework 
+                    and self-learning. I'm excited to continue growing as a developer and applying what I learn.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Building responsive websites</li>
+                            <li><span>Frontend</span><br>HTML, CSS, JavaScript, Bootstrap</li>
+                            <li><span>Other languages</span><br>Java, Python</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>College Projects</span><br>Web Development and Programming</li>
+                            <li><span>Coursework</span><br>Information Technology Fundamentals</li>
+                            <li><span>Self-Learning</span><br>Online Courses and Tutorials</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Current</span><br>Information Technology Student</li>
+                            <li><span>Certificates</span><br>Sololearn Online Courses</li>
+                            <li><span>High School</span><br>High School Diploma</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificates Section -->
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="certificate-list">
+                <div class="certificate">
+                    <img src="html-certificate.jpg" alt="HTML Sololearn Certificate">
+                    <div class="layer">
+                        <h3>HTML</h3>
+                        <p>HTML Certificate from Sololearn</p>
+                        <a href="https://www.sololearn.com/certificates/CC-MIBQOCPN" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="css-certificate.jpg" alt="CSS Sololearn Certificate">
+                    <div class="layer">
+                        <h3>CSS</h3>
+                        <p>CSS Certificate from Sololearn</p>
+                        <a href="https://www.sololearn.com/certificates/CC-3C04Y6JD" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="javascript-certificate.jpg" alt="JavaScript Sololearn Certificate">
+                    <div class="layer">
+                        <h3>JavaScript</h3>
+                        <p>JavaScript Certificate from Sololearn</p>
+                        <a href="https://www.sololearn.com/certificates/CC-HT7XPTBB" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="Menu.png" alt="Menu">
+                    <div class="layer">
+                        <h3>Menu</h3>
+                        <a href="https://codepen.io/xabinspb-the-sasster/full/GggOMjK" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="Bootstrap5.png" alt="Bootstrap 5">
+                    <div class="layer">
+                        <h3>Bootstrap 5</h3>
+                        <a href="https://codepen.io/xabinspb-the-sasster/full/QwwjqQV" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="Chocolate Cookies.png" alt="Chocolate Cookies">
+                    <div class="layer">
+                        <h3>Chocolate Cookies</h3>
+                        <a href="https://codepen.io/xabinspb-the-sasster/full/jEOWZar" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-list" id="hiddenProjects" style="display: none;">
+                <div class="project">
+                    <img src="HideShow.png" alt="HideShow">
+                    <div class="layer">
+                        <h3>HideShow</h3>
+                        <a href="https://codepen.io/xabinspb-the-sasster/full/KwwyXMa" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="ID Attribute.png" alt="ID Attribute">
+                    <div class="layer">
+                        <h3>ID Attribute</h3>
+                        <a href="https://codepen.io/xabinspb-the-sasster/full/azzVLZK" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="Interactive Web.png" alt="Interactive Web">
+                    <div class="layer">
+                        <h3>Interactive Web</h3>
+                        <a href="https://codepen.io/xabinspb-the-sasster/full/dPyMbaw" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="Recipe.png" alt="Recipe">
+                    <div class="layer">
+                        <h3>Recipe</h3>
+                        <a href="https://codepen.io/xabinspb-the-sasster/full/OPPLyBm" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="About Me.png" alt="About Me">
+                    <div class="layer">
+                        <h3>About Me</h3>
+                        <a href="https://codepen.io/xabinspb-the-sasster/full/OPPLyBm" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-container">
+                <a href="#" class="btn" id="seeMoreBtn">See more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> <a href="mailto:jmarinas238@gmail.com">jmarinas238@gmail.com</a></p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0927-451-8145</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2025 John Paul Marinas. College Portfolio Project.</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Mobile menu functionality
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        // See more button functionality
+        document.getElementById("seeMoreBtn").addEventListener("click", function(e) {
+            e.preventDefault();
+            var hiddenProjects = document.getElementById("hiddenProjects");
+            var seeMoreBtn = document.getElementById("seeMoreBtn");
+            
+            if (hiddenProjects.style.display === "none") {
+                hiddenProjects.style.display = "grid";
+                seeMoreBtn.textContent = "Show less";
+            } else {
+                hiddenProjects.style.display = "none";
+                seeMoreBtn.textContent = "See more";
+            }
+        });
+    </script>
+</body>
+</html>
